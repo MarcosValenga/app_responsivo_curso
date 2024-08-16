@@ -8,6 +8,8 @@ class TopSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //debugInvertOversizedImages = true;
+
     return LayoutBuilder(
       builder: (context, constraints) {
         final maxWidth = constraints.maxWidth;
@@ -19,8 +21,8 @@ class TopSection extends StatelessWidget {
               children: [
                 AspectRatio(
                   aspectRatio: 3.4,
-                  child: Image.network(
-                    'https://static.vecteezy.com/system/resources/previews/001/058/382/original/pink-and-purple-dynamic-shape-horizontal-banner-vector.jpg',
+                  child: Image.asset(
+                    'assets/images/banner.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -70,8 +72,8 @@ class TopSection extends StatelessWidget {
                 SizedBox(
                   height: 250,
                   width: double.infinity,
-                  child: Image.network(
-                    'https://static.vecteezy.com/system/resources/previews/001/058/382/original/pink-and-purple-dynamic-shape-horizontal-banner-vector.jpg',
+                  child: Image.asset(
+                    'assets/images/banner.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -117,8 +119,8 @@ class TopSection extends StatelessWidget {
           children: [
             AspectRatio(
               aspectRatio: 3.4,
-              child: Image.network(
-                'https://static.vecteezy.com/system/resources/previews/001/058/382/original/pink-and-purple-dynamic-shape-horizontal-banner-vector.jpg',
+              child: Image.asset(
+                'assets/images/banner.jpg',
                 fit: BoxFit.cover,
               ),
             ),
