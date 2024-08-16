@@ -4,6 +4,7 @@ import 'package:app_responsivo_curso/pages/home/widgets/sections/advantages_sect
 import 'package:flutter/material.dart';
 
 import '../../breakpoints.dart';
+import 'widgets/sections/courses_section.dart';
 import 'widgets/sections/top_section.dart';
 
 class HomePage extends StatelessWidget {
@@ -33,7 +34,8 @@ class HomePage extends StatelessWidget {
             child: ListView(
               children: const [
                 TopSection(),
-                AdvantagesSection()
+                AdvantagesSection(),
+                CoursesSection()
               ],
             )
           ),
