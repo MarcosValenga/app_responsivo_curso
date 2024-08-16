@@ -1,7 +1,7 @@
 import 'package:app_responsivo_curso/breakpoints.dart';
 import 'package:flutter/material.dart';
 
-import 'custom_search_field.dart';
+import '../custom_search_field.dart';
 
 class TopSection extends StatelessWidget {
   const TopSection({super.key});
@@ -112,6 +112,7 @@ class TopSection extends StatelessWidget {
             ),
           );
         }
+        
         return Column(
           children: [
             AspectRatio(

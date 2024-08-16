@@ -1,5 +1,6 @@
 import 'package:app_responsivo_curso/pages/home/widgets/app_bar/mobile_app_bar.dart';
 import 'package:app_responsivo_curso/pages/home/widgets/app_bar/web_app_bar.dart';
+import 'package:app_responsivo_curso/pages/home/widgets/sections/advantages_section.dart';
 import 'package:flutter/material.dart';
 
 import '../../breakpoints.dart';
@@ -31,7 +32,8 @@ class HomePage extends StatelessWidget {
             constraints: const BoxConstraints(maxWidth: 1400),
             child: ListView(
               children: const [
-                TopSection()
+                TopSection(),
+                AdvantagesSection()
               ],
             )
           ),
