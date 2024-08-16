@@ -3,6 +3,7 @@ import 'package:app_responsivo_curso/pages/home/widgets/app_bar/web_app_bar.dart
 import 'package:flutter/material.dart';
 
 import '../../breakpoints.dart';
+import 'widgets/sections/top_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,6 +13,7 @@ class HomePage extends StatelessWidget {
     return LayoutBuilder(builder: (context, constraints) {
       print("Biggest ${constraints.biggest} smallest ${constraints.smallest}");
       return Scaffold(
+        backgroundColor: Colors.black,
         appBar: constraints.maxWidth < mobileBreakPoint
             ? const PreferredSize(
                 preferredSize: Size(double.infinity, 56),
@@ -22,6 +24,18 @@ class HomePage extends StatelessWidget {
                 child: WebAppBar(),
               ),
         drawer: constraints.maxWidth < mobileBreakPoint ? const Drawer() : null,
+        body: 
+        Align(
+          alignment: Alignment.topCenter,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 1400),
+            child: ListView(
+              children: const [
+                TopSection()
+              ],
+            )
+          ),
+        ),
       );
     });
   }
